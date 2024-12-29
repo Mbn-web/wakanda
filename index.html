@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="login-container">
+        <video autoplay muted loop class="background-video">
+            <source src="logovid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Welcome Page -->
+<div id="welcomePage" class="welcome-page" style="display: none;">
+    <!-- User-specific Background Video -->
+    <video id="backgroundVideo" autoplay muted loop class="background-video">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="welcome-message">
+        <h2 id="welcomeText">Welcome, [username]!</h2> <!-- Personalized message -->
+        <img id="userPhoto" src="" alt="User Photo" class="user-photo">
+        <p>We're happy to have you back!</p> <!-- Extra message -->
+    </div>
+</div>
+
+
+
+    <footer>
+        <p>© 2024 Your Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
